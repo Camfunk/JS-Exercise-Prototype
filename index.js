@@ -92,22 +92,25 @@ function Baby(name, age, favoriteToy) {
   Person.call(name, age);
   this.name = name;
   this.age = age;
-  //this.stomach = [];
+  this.stomach = [];
   this.favoriteToy = favoriteToy;
+  console.log(this);
 }
 
 Baby.prototype.play = function() {
   return `Playing with ${this.favoriteToy}`;
 };
-
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
   1. 
   2. 
-  3. 
+  3.
+
   4. 
+
+  Window binding is the default binding of the 'this' keyword
 */
 
 ///////// END OF CHALLENGE /////////
